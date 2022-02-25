@@ -9,7 +9,7 @@ bool sub(char* s, char* n) {
 		if (*(s+i) == *n) {
 			for (int j = 0; *(s+(i+j)) == *(n+j); ++j) {
 
-				if (*(n+j) == '\0') {
+				if (*(n+(j+1)) == '\0') {
 					return true;
 				}
 
